@@ -1,0 +1,56 @@
+.img__logo{
+    width: 50%;
+    display: block;
+    margin: 0.5em auto 0.5em;
+}
+
+.container__padding{
+	padding-top: 5%;
+}
+
+.bg__color{
+	background-color: rgb(73,115,31);
+}
+
+.img__navbar{
+	margin-left: auto;
+    margin-right: auto !important;
+    width: 6em;
+}
+
+.background__div{
+	background-color: #fbd490;
+}
+
+.card__center{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn__color{
+	color: #000 !important;
+}
+
+.table__padding{
+	padding-top: 5%;
+}
+
+.icon__trash{
+	color: red;
+	margin-right: 10px;
+}
+
+.icon__pencil{
+	color: orange;
+}
+
+.table__center{
+	text-align: center;
+}
+
+
+.btn_center{
+	text-align: center;
+}

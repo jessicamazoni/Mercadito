@@ -8,15 +8,15 @@
 		    <div class="form-group col-md-5">
 
 		      <label for="inputNome">Nome</label>
-		      <input name= "nome" type="text" class="form-control" id="inputNome" required placeholder="Insira o nome do produto">
+		      <input value = "{{prod.nome}}" name= "nome" type="text" class="form-control" id="inputNome" required placeholder="Insira o nome do produto">
 		    </div>
 			<div class="form-group col-md-3">
 				<label for="inputPreco">Preço</label>
-				<input name= "preco" type="text" class="form-control" id="inputPreco" placeholder="Insira o valor unitário do produto">
+				<input value = "{{prod.preco}}" name= "preco" type="text" class="form-control" id="inputPreco" placeholder="Insira o valor unitário do produto">
 			</div>
 			<div class="form-group col-md-3">
 			<label for="inputQnt">Quantidade</label>
-			<select name= "qtd" id="inputQnt" class="form-control">
+			<select value = "{{prod.qtd}}" name= "qtd" id="inputQnt" class="form-control">
 			  <option selected>Selecione a quantidade</option>
 			  <option >1</option>
 			  <option >2</option>
@@ -34,7 +34,7 @@
 		 <div class="form-row">			
 			<div class="form-group col-md-4">
 			<label for="inputTipo">Setor</label>
-			<select  name= "tipo" id="inputTipo" class="form-control">
+			<select value = "{{prod.tipo}}" name= "tipo" id="inputTipo" class="form-control">
 			  <option selected>Selecione o tipo do produto</option>
 			  <option >Doce</option>
 			  <option >Salgado</option>
@@ -47,7 +47,7 @@
 			</div>
 			<div class="form-group col-md-5">
 			<label for="inputMarca">Marca</label>
-			<select name= "marca" id="inputMarca" class="form-control">
+			<select value = "{{prod.marca}}" name= "marca" id="inputMarca" class="form-control">
 			  <option selected>Selecione a marca do produto</option>
 			  <option >Nestlé</option>
 			  <option >Danone</option>
@@ -59,45 +59,9 @@
 			</div>
 		</div>
 		<div class="btn_center">
-		  <button type="submit" class="button__espace btn btn-success">Adicionar</button>
+		  <button type="submit" class="button__espace btn btn-success">Salvar</button>
 		</div>
 		</form>
-	</div>
-	<div class="container">
-	<section>
-
-			<div class="table-responsive table__padding">				
-				<table class="table table-bordered table-hover">
-					<thead>
-						<tr class="table__center">
-							<th>ID</th>
-							<th>Nome</th>
-							<th>Preço</th>
-							<th>Quantidade</th>
-							<th>Setor</th>
-							<th>Marca</th>
-							<th>Ações</th>
-						</tr>
-					</thead>
-				{{#each posts}}
-					<tbody>
-						<tr>
-							<td>{{id}}</td>
-							<td>{{nome}}</td>
-							<td>{{preco}}</td>
-							<td>{{quantidade}}</td>
-							<td>{{setor}}</td>
-							<td>{{marcar}}</td>
-							<td><a href="/deletar/{{id}}"><i class="fas fa-trash-alt icon__trash"></i></a>
-							<a href="/editar/{{id}}"><i class="fas fa-pencil-alt icon__pencil"></i></a> </td>
-						</tr>						
-					</tbody>
-					{{/each}}
-				</table>
-			</div>
-		</div>
-</section>
+	</div>	
 </div>
 </body>
-
-

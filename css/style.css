@@ -29,10 +29,6 @@
 	align-items: center;
 }
 
-.btn__color{
-	color: #000 !important;
-}
-
 .table__padding{
 	padding-top: 5%;
 }
@@ -53,4 +49,14 @@
 
 .btn_center{
 	text-align: center;
+}
+
+a:hover{
+	text-decoration: none;
+	color: white !important;
+}
+
+a {
+	text-decoration: none;
+	color: white !important;
 }
